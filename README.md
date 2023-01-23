@@ -1,19 +1,19 @@
-# <h1 align="center">👑Shizu-Bot👑</h1>
+# <h1 align="center">UD-MD-V1</h1>
 
 <p align="center"> 
-  <a href="https://github.com/Shizu-Hub"><img src="http://readme-typing-svg.herokuapp.com?font=Arial+black&color=DCC12E&lines=WELCOME+TO+SHIZU-BOT-MD;CREATOR+OF+THE+BOT+AHMAD+ALI;THANKS+FOR+CHOSING+SHIZU+BOT+:v+%F0%9F%91%8B" height="70px"
+  <a href="https://github.com/umar404" ><img src="http://readme-typing-svg.herokuapp.com?font=Arial+black&color=DCC12E&lines=WELCOME+TO+UD-MD-V1;CREATOR+OF+THE+BOT+UMAR+REHMAN+🇵🇰;THANKS+FOR+CHOSING+UD-MD-V1+BOT+:v+%F0%9F%91%8B" height="70px"
 </p>
 
 ![Snake animation](https://github.com/GataNina-Li/GataNina-Li/blob/output/github-contribution-grid-snake.svg)
 </div>
 
 <p align="center">
-<a href="https://github.com/xIKRATOSx"><img title="Author" src="https://img.shields.io/badge/AUTHOR-xIKRATOSx-green.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/umar404"><img title="Author" src="https://img.shields.io/badge/AUTHOR-Umar-green.svg?style=for-the-badge&logo=github"></a>
 
 ---------
 
-## ```DOUBTS ABOUT THE BOT?, CONTACT ME 💌``` 
-  <a href="https://wa.me/923470027813">
+## ```DOUBTS ABOUT THE BOT?, CONTACT ME 🙈``` 
+  <a href="https://wa.me/923165123719">
     <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
   </a> &nbsp;&nbsp;
   <a href="mailto:bmclips001@gmail.com">
@@ -23,14 +23,14 @@
 ---------
   
  
-<a href="http://wa.me/923470027813" target="blank"><img src="https://img.shields.io/badge/xIKRATOSx-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/923165123719" target="blank"><img src="https://img.shields.io/badge/Umar-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-<a href="https://chat.whatsapp.com/KqYY92moqLG4Ik0QWRIgio" target="red"><img src="https://img.shields.io/badge/Group-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=red" />
+<a href="https://chat.whatsapp.com/FrYa5MtvVjr94oMNTXCdPg" target="red"><img src="https://img.shields.io/badge/Group-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=red" />
 </a>
   
 
 <p align="hihg">   
-<a href="https://instagram.com/itx_ahmad.ali" target="_blank"> <img src="https://img.shields.io/badge/Dark-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=yellow" target="_blank"></a>
+<a href="https://instagram.com/dark-umar404" target="_blank"> <img src="https://img.shields.io/badge/Umar404-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=yellow" target="_blank"></a>
   
 > NUMBERS ARE NOT BOTS AND NUMBERS-BOTS ARE NOT ALLOWED IN THE GROUP
 
@@ -51,8 +51,8 @@
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
-> git clone https://github.com/xIKRATOSx/Shizu-Bot-MD
-> cd Shizu-Bot-MD
+> git clone https://github.com/umar404/Ud-Md-V1
+> cd Ud-Md-V1
 > yarn install 
 > npm install
 > npm update
@@ -64,7 +64,7 @@
 ```bash
 TYPE THE FOLLOWING COMMANDS ONE BY ONE:
 > cd 
-> cd Shizu-Bot-MD
+> cd Ud-Md-V1
 > npm start
 ```
 
@@ -73,8 +73,8 @@ TYPE THE FOLLOWING COMMANDS ONE BY ONE:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd Shizu-Termux
-> rm -rf MysticSession
+> cd Ud-Md-V1-Termux
+> rm -rf umar404Session
 > npm start
 ```
   
@@ -92,18 +92,16 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 - xIKRATOSx IS NOT RESPONSIBLE FOR THE USE, NUMBERS, PRIVACY AND CONTENT SENT, USED OR MANAGED BY YOU OR THE BOT
 
 ## `COLABORATORES OF BOT`
-  <a href="https://github.com/theh2so4"><img src="https://github.com/theh2so4.png" width="100" height="100" alt="theh2so4"/></a>
-<a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="100" height="100" alt="BrunoSobrino"/></a>
-<a href="https://github.com/Shizu-Hub"><img src="https://github.com/Shizu-Hub.png" width="100" height="100" alt="theh2so4"/></a>
+<a href="https://github.com/Shizu-Hub"><img src="https://github.com/umar404.png" width="100" height="100" alt="theh2so4"/></a>
 
 ## `PUBLISHER AND PROPRIETARY OF THE BOT` 
 
 <p align="center">
-<a href="https://github.com/xIKRATOSx"><img src="https://github.com/xIKRATOSx.png" width="300" height="300" alt="Shizu"/></a>
+<a href="https://github.com/umar404"><img src="https://github.com/umar404.png" width="300" height="300" alt="Ud-Md-V1"/></a>
 </p>
 
-<h3 align="center">Shizu-Bot-MD</h3>
-<h3 align="center">By xIKRATOSx</h3> 
+<h3 align="center">Ud-Md-V1</h3>
+<h3 align="center">By Umar Rehman</h3> 
 
 --------
 
