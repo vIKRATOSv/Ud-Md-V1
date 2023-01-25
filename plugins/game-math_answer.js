@@ -1,24 +1,28 @@
-global.math = global.math ? global.math : {}
-let handler = async (m, { conn }) => {
-let id = m.chat
-if (!m.quoted) return
-if (m.quoted.sender != conn.user.jid) return
-if (!/^𝙲𝚄𝙰𝙽𝚃𝙾 𝙴𝚂 𝙴𝙻 𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾 𝙳𝙴/i.test(m.quoted.text)) return
-if (!(m.chat in global.math)) return conn.sendButton(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝚈𝙰 𝚂𝙴 𝙰𝙷 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙸𝙳𝙾 𝙰 𝙴𝚂𝙰 𝙿𝚁𝙴𝙶𝚄𝙽𝚃𝙰*', author, null, [['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙹𝚄𝙶𝙰𝚁', '/mates']], m)
-if (m.quoted.id == global.math[id][0].id) {
-let math = global.math[id][1]
-if (m.text == math.result) {
-conn.sendButton(m.chat, `*𝚁𝙴𝚂𝙿𝚄𝙴𝚂 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰!!*\n*𝙷𝙰𝚉 𝙶𝙰𝙽𝙰𝙳𝙾: ${math.bonus} 𝚇𝙿*`, author, null, [['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙹𝚄𝙶𝙰𝚁', `/math ${math.mode}`]], m)
-global.db.data.users[m.sender].exp += math.bonus
-clearTimeout(global.math[id][3])
-delete global.math[id]
-} else {
-if (--global.math[id][2] == 0) {
-conn.sendButton(m.chat, `*𝚂𝙴 𝙰𝙲𝙰𝙱𝙰𝚁𝙾𝙽 𝚃𝚄𝚂 𝙾𝙿𝙾𝚁𝚃𝚄𝙽𝙸𝙳𝙰𝙳𝙴𝚂*\n*𝙻𝙰 𝚁𝙴𝚂𝙿𝚄𝙴𝚂𝚃𝙰 𝙴𝚂: ${math.result}*`, author, null, [['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙹𝚄𝙶𝙰𝚁', `/math ${math.mode}`]], m)
-clearTimeout(global.math[id][3])
-delete global.math[id]
-} else conn.reply(m.chat, `*𝚁𝙴𝚂𝙿𝚄𝙴𝚂𝚃𝙰 𝙸𝙽𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰!!*\n*𝙰𝚄𝙽 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂 ${global.math[id][2]} 𝚘𝚙𝚘𝚛𝚝𝚞𝚗𝚒𝚍𝚊𝚍𝚎𝚜*`, m)
-}}}
-handler.customPrefix = /^-?[0-9]+(\.[0-9]+)?$/
-handler.command = new RegExp
+import db from '../lib/database.js'
+
+let handler = m => m
+handler.before = async function (m) {
+    if (!/^-?[0-9]+(\.[0-9]+)?$/.test(m.text)) return !0
+    let id = m.chat
+    if (!m.quoted || !m.quoted.fromMe || !m.text || !/^Berapa hasil dari/i.test(m.quoted.text)) return !0
+    this.math = this.math ? this.math : {}
+    if (!(id in this.math)) return this.sendButton(m.chat, 'Soal itu telah berakhir', author, null, [['math', '/math']], m)
+    if (m.quoted.id == this.math[id][0].id) {
+        let math = JSON.parse(JSON.stringify(this.math[id][1]))
+        if (m.text == math.result) {
+            db.data.users[m.sender].exp += math.bonus
+            clearTimeout(this.math[id][3])
+            delete this.math[id]
+            this.sendButton(m.chat, `*Jawaban Benar!*\n+${math.bonus} XP`, author, null, [['again', `/math ${math.mode}`]], m)
+        } else {
+            if (--this.math[id][2] == 0) {
+                clearTimeout(this.math[id][3])
+                delete this.math[id]
+                this.sendButton(m.chat, `*Kesempatan habis!*\nJawaban: *${math.result}*`, author, null, [['again', `/math ${math.mode}`]], m)
+            } else m.reply(`*Jawaban Salah!*\nMasih ada ${this.math[id][2]} kesempatan`)
+        }
+    }
+    return !0
+}
+
 export default handler
