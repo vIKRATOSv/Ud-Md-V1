@@ -18,17 +18,17 @@ let { code, msg } = res.status
 if (code !== 0) throw msg
 let { title, artists, album, genres, release_date } = res.metadata.music[0]
 let txt = `
-𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾𝚂 𝙳𝙴 𝙻𝙰 𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰
+𝑺𝒆𝒂𝒓𝒄𝒉 𝑹𝒆𝒔𝒖𝒍𝒕 🖤🙈
 
-• 📌 𝚃𝙸𝚃𝚄𝙻𝙾: ${title}
-• 👨‍🎤 𝙰𝚁𝚃𝙸𝚂𝚃𝙰: ${artists !== undefined ? artists.map(v => v.name).join(', ') : 'No encontrado'}
-• 💾 𝙰𝙻𝙱𝚄𝙼: ${album.name || 'No encontrado'}
-• 🌐 𝙶𝙴𝙽𝙴𝚁𝙾: ${genres !== undefined ? genres.map(v => v.name).join(', ') : 'No encontrado'}
-• 📆 𝙵𝙴𝙲𝙷𝙰 𝙳𝙴 𝙻𝙰𝙽𝚉𝙰𝙼𝙸𝙴𝙽𝚃𝙾: ${release_date || 'No encontrado'}
+• 📌 𝑻𝒊𝒕𝒍𝒆: ${title}
+• 👨‍🎤 𝑨𝒓𝒕𝒊𝒔𝒕: ${artists !== undefined ? artists.map(v => v.name).join(', ') : 'No encontrado'}
+• 💾 𝑨𝒍𝒃𝒖𝒎: ${album.name || 'No encontrado'}
+• 🌐 𝑮𝒆𝒏𝒓𝒆𝒔: ${genres !== undefined ? genres.map(v => v.name).join(', ') : 'No encontrado'}
+• 📆 𝑹𝒆𝒍𝒆𝒂𝒔𝒆 𝑫𝒂𝒕𝒆: ${release_date || 'No encontrado'}
 `.trim()
 fs.unlinkSync(`./tmp/${m.sender}.${ext}`)
 m.reply(txt)
-} else throw '*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙰 𝙰 𝚄𝙽 𝙰𝚄𝙳𝙸𝙾*'
+} else throw '*[ 🙈 𝐈𝐍𝐅𝐎 🙈] 𝑹𝒆𝒔𝒑𝒐𝒏𝒅 𝑻𝒐 𝑨𝒖𝒅𝒊𝒐*'
 }
 handler.command = /^quemusica|quemusicaes|whatmusic$/i
 export default handler
