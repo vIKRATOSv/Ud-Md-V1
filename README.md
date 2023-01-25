@@ -80,7 +80,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
   
 ### `—◉ TUTORIAL: HOW TO HOST A BOT 💥`
 <a href="https://billing.acidicnodes.ml/register?ref=nSzLjTPd" width="100" height="100" alt="acidicnodes"/></a>
-- TUTORIAL: [https://www.youtube.com/watch?v=_TuRgyR5I_0](https://www.youtube.com/watch?v=_TuRgyR5I_0)
+- TUTORIAL: [Yt Video Soon](Yt Video Soon)
 
 
 ### `—◉ 📝 NOTES 📝`
