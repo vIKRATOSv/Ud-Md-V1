@@ -1,9 +1,9 @@
 let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let texto1 = `*https://github.com/xIKRATOSx/Shizu-Bot-MD*`
+let texto1 = `*https://github.com/umar404/Ud-Md-V1*`
 let buttonMessage= {
-'document': { url: `https://github.com/xIKRATOSx/Shizu-Bot-MD` },
+'document': { url: `https://github.com/umar404/Ud-Md-V1` },
 'mimetype': `application/${document}`,
 'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
 'fileLength': 99999999999999,
@@ -12,13 +12,13 @@ let buttonMessage= {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/xIKRATOSx/Shizu-Bot-MD',
+'mediaUrl': 'https://github.com/umar404/Ud-Md-V1',
 'mediaType': 2,
 'previewType': 'pdf',
-'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
+'title': '𝑼𝒅-𝑴𝒅-𝑽1 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝑩𝒐𝒕⁩',
 'body': wm,
 'thumbnail': imagen1,
-'sourceUrl': 'https://www.youtube.com/@xIKRATOSx' }},
+'sourceUrl': 'https://www.youtube.com/@UMARMODS' }},
 'caption': texto1,
 'footer': wm,
 'buttons':[
